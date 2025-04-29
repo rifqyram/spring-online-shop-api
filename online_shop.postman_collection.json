@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "8e72a871-4568-49fc-821c-e44d79da3309",
+		"name": "Online Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12979780"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Tas Laptop Kulit C\",\n    \"price\": 300000.0,\n    \"stock\": 10,\n    \"productTypeId\": \"5e01c5ce-4ab1-4939-ba0f-1f3b9753e638\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products/1707e503-c104-4d05-86a7-03195d9083a9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"1707e503-c104-4d05-86a7-03195d9083a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/products/1707e503-c104-4d05-86a7-03195d9083a9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products",
+								"1707e503-c104-4d05-86a7-03195d9083a9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"1707e503-c104-4d05-86a7-03195d9083a9\",\n    \"name\": \"Tas Laptop A\",\n    \"price\": 100000.0,\n    \"stock\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Type",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"Tas Laptop Kulit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product-types",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product-types/2a74b0ae-2658-4d74-8242-b2cb14394fa5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product-types",
+								"2a74b0ae-2658-4d74-8242-b2cb14394fa5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product-types",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"2a74b0ae-2658-4d74-8242-b2cb14394fa5\",\n    \"type\": \"Tas Laptop Kulit Kuda\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/product-types",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/product-types/2a74b0ae-2658-4d74-8242-b2cb14394fa5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"product-types",
+								"2a74b0ae-2658-4d74-8242-b2cb14394fa5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Margin Period",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"startDate\": \"2025-04-28\",\n  \"endDate\": \"2025-05-28\",\n  \"marginPercentage\": 5.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/margins",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"margins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/margins/cb212e34-3f74-4bca-bf8e-64132bdd3f62",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"margins",
+								"cb212e34-3f74-4bca-bf8e-64132bdd3f62"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/margins",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"margins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"id\": \"cb212e34-3f74-4bca-bf8e-64132bdd3f62\",\n    \"startDate\": \"2025-04-28\",\n    \"endDate\": \"2025-06-28\",\n    \"marginPercentage\": 7.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/margins",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"margins"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerEmail\": \"customer0@mail.com\",\n    \"transactionDetails\": [\n        {\n            \"productId\": \"a1db8b4b-6391-49c9-9112-f64e09d6a61f\",\n            \"quantity\": 1\n        },\n        {\n            \"productId\": \"ad34d9c9-0677-49d9-9757-e2058b941093\",\n            \"quantity\": 2\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/transactions",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/transactions/61d59caa-c42b-4e0c-b425-5b8dde4264f9",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"transactions",
+								"61d59caa-c42b-4e0c-b425-5b8dde4264f9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/transactions",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales Report",
+			"item": [
+				{
+					"name": "Get Sales Report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/sales?startDate=2025-01-01&endDate=2025-04-30",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"sales"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2025-01-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2025-04-30"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
